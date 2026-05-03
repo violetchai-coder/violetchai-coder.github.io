@@ -1,0 +1,322 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol Bowl | The Better Way to Eat Fruit</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fffeea; 
+            margin: 0;
+            padding: 40px 0;
+            font-family: 'Fredoka', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky; 
+            top: 20px;       
+            z-index: 1000;   
+            width: 100%;     
+        }
+
+        .logo-section {
+            z-index: 2; 
+        }
+
+        .logo-section img {
+            width: 140px; 
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.1));
+        }
+        
+        .logo-section img:hover {
+            transform: scale(1.05) rotate(-2deg); 
+        }
+
+        .nav-container {
+             background-color:rgba(231, 173, 65, 0.7);
+            padding: 10px 20px 10px 80px; 
+            border-radius: 100px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            gap: 10px;
+            margin-left: -70px; 
+            z-index: 1;
+        }
+
+        .nav-tab {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            padding: 15px 25px;
+            border-radius: 100px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .nav-tab:hover {
+            background-color: #8d3047;
+            color: #eeb8c9;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(141, 48, 71, 0.3);
+        }
+
+        .nav-tab.active {
+            background-color: #8d3047;
+        }
+
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 50px 0;
+        }
+
+        .product-card {
+            flex: 1 1 calc(25% - 20px);
+            max-width: 280px;
+            text-align: center;
+        }
+
+        .product-image {
+            aspect-ratio: 1 / 1;
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            color: #8d3047;
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .product-description {
+            font-size: 0.85rem;
+            color: #666;
+            padding: 0 10px;
+            margin-top: 8px;
+        }
+
+        .products-title-top img{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+         .products-subtitle-top img {
+            width: 100%;
+            height: 90%;
+            align-self: center;
+            border-radius: 20px;
+        }
+        .product-row.acai-row {
+            max-width: 900px;
+        }
+
+        .product-row.acai-row .product-card {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 400px;
+        }
+
+        .product-row.acai-row .product-image {
+            border-radius: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header-wrapper">
+    <div class="logo-section">
+        <a href="WrapUpHome.html">
+           <img src="https://drive.google.com/thumbnail?id=1PhuORRzbzncP-9KNCoDpDYFEl7ICRNXO" alt="Sol Bowl Logo">
+        </a>
+    </div>
+
+    <nav class="nav-container">
+        <a href="WrapUpHome.html" class="nav-tab">HOME PAGE</a>
+        <a href="WrapUpProducts1.html" class="nav-tab">PRODUCTS</a>
+        <a href="WrapUpLocations2.html" class="nav-tab">LOCATIONS</a>
+        <a href="WrapUpFruits3.html" class="nav-tab">FRUITS</a>
+    </nav>
+</div>
+
+<br>
+
+<div class="products-title-top">
+    <img src="menu title pic.png" alt="Menu Banner">
+</div>
+
+<br>
+
+<div class="products-subtitle-top">
+    <img src="acai title pic.png" alt="Acai Bowls">
+</div>
+
+<br>
+
+<div class="product-row acai-row">
+    <div class="product-card">
+        <div class="product-image"><img src="A1 copy.png"></div>
+        <h3><b>NEW!</b> Tropical Bliss</h3>
+        <div class="product-price">$29.90</div>
+        <div class="product-description">
+            Coconut Cream Mango, Purple passionfruit, finger lemon, & monstera fruit blended smoothly. <br>Topped with granola, mango, passionfruit, chia seeds & honey  
+<br> <b>Additional suggested toppings:</b> coconut flakes, fingerlemon zest, or  Mangosteen jelly.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="A2 copy.png"></div>
+        <h3>Berry Blast (Classic)</h3>
+        <div class="product-price">$19.00</div>
+        <div class="product-description">
+            Acai berries, blueberries, Gros Michel Bananna & raspberry blended smoothly.<br>Topped with granola, fresh berries, and a drizzle of honey.
+            <br><b>Additional suggested toppings:</b> coconut flakes, chia seeds, or a dollop of almond butter.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="A3.png"></div>
+        <h3>Green Detox</h3>
+        <div class="product-price">$27.90</div>
+        <div class="product-description">
+            Monstera fruit, mangosteen, Gros Michel Bananna, spinach & kale blended smoothly<br> Topped with fresh mangosteen, Gros Michel Bananna, coconut shreds, chia seeds & honey  
+          <br><b>Additional suggested toppings:</b> coconut flakes, chia seeds, or a dollop of almond butter.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="A4 copy.png"></div>
+        <h3>Peanut Butter Crunch</h3>
+        <div class="product-price">$19.90</div>
+        <div class="product-description">
+              Gros Michel Bananna, blueberries, peanut butter, cacao powder & almond milk blended smoothly<br> Drizzled with chocolate syrup/biscoff/peanut butter, topped with chocolate bits, bananas & blueberries
+            <br><b>Additional suggested toppings:</b> Extra chocolate chips, Almond butter and biscoff syrup.
+        </div>
+    </div>
+</div>
+
+<div class="products-subtitle-top">
+    <img src="smoothies title pic.png" alt="Smoothies">
+</div>
+
+<br>
+
+<div class="product-row">
+    <div class="product-card">
+        <div class="product-image"><img src="S1 copy.png"></div>
+        <h3>Paradise Punch</h3>
+        <div class="product-price">$17.90</div>
+        <div class="product-description">
+            Raspberry, purple passionfruit, finger lemon, monstera fruit, raspberries & yogurt.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="S2.png"></div>
+        <h3>Strawberry Glaze</h3>
+        <div class="product-price">$17.90</div>
+        <div class="product-description">
+            Milk, strawberries, banana, mangosteen, monstera fruit, honey & yogurt.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="S3 copy.png"></div>
+        <h3>Malibu Mango</h3>
+        <div class="product-price">$17.90</div>
+        <div class="product-description">
+            Coconut Cream Mango, monstera fruit, Vanilla Cream Blood Orange, vanilla & yogurt.
+        </div>
+    </div>
+</div>
+
+<div class="products-subtitle-top">
+    <img src="coldpress title pic.png" alt="Cold Press Drinks">
+</div>
+
+<br>
+
+<div class="product-row">
+    <div class="product-card">
+        <div class="product-image"><img src="C1 copy.png"></div>
+        <h3>Berry Blend</h3>
+        <div class="product-price">$13.90</div>
+        <div class="product-description">
+            Blueberries, raspberries, strawberries & finger lemon.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="C2 copy.png"></div>
+        <h3>Passion Glow <br><small>(Customer Fave)</small></h3>
+        <div class="product-price">$15.90</div>
+        <div class="product-description">
+            Purple passionfruit, mangosteen, monstera fruit & finger limes.
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="C3 copy.png"></div>
+        <h3>Recharge</h3>
+        <div class="product-price">$13.90</div>
+        <div class="product-description">
+            Pink guava, lychee, Vanilla Cream Blood Orange & carrot.
+        </div>
+    </div>
+</div>
+
+<div class="products-subtitle-top">
+    <img src="bagels title pic.png" alt="Bagels">
+</div>
+
+<br>
+
+<div class="product-row">
+    <div class="product-card">
+        <div class="product-image"><img src="bagel cover.png"></div>
+        <h3>Original Plain Bagel</h3>
+        <div class="product-price">$5.00</div>
+        <div class="product-description">
+            <b>Customizable! </b>Toppings available: Normal fruits(+ $1), Exotic Fruit Selection(+$9.90), smoked salmon(+$17.90).
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="B2 copy.png"></div>
+        <h3>Cream Cheese Bagel</h3>
+        <div class="product-price">$5.90</div>
+        <div class="product-description">
+            Fresh bagel served with creamy classic cream cheese.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
